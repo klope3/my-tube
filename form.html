@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MyTube</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="navBar">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <span class="navBarIcon">
+                            <img src="images/home.png" alt="Home" width="15px">
+                        </span>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="pages/collectionUnity.html">
+                        <span class="navBarIcon">
+                            <img src="images/unity.png" alt="Unity" width="15px">
+                        </span>
+                        Unity Tutorials
+                    </a>
+                </li>
+                <li>
+                    <a href="pages/collectionWriting.html">
+                        <span class="navBarIcon">
+                            <img src="images/writing.png" alt="Writing" width="15px">
+                        </span>
+                        Writing Tips
+                    </a>
+                </li>
+                <li>
+                    <a href="pages/collectionParkour.html">
+                        <span class="navBarIcon">
+                            <img src="images/parkour.png" alt="Parkour" width="15px">
+                        </span>
+                        Parkour
+                    </a>
+                </li>
+                <li>
+                    <a href="form.html">
+                        <span class="navBarIcon">
+                            <img src="images/upload.png" alt="Upload" width="15px">
+                        </span>
+                        New Video
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="contentBox">
+            <header>
+                <h1>
+                    <span>
+                        <img src="images/video-icon-png-pic-449920.png" alt="MyTube" width="70px">
+                    </span>
+                    MyTube
+                </h1>
+                <h2>Upload New Video</h2>
+            </header>
+    
+            <form>
+                <div class="inputSection">
+                    <label for="videoTitle"><strong>Video Title</strong></label>
+                    <input type="text" name="videoTitle" id="videoTitle" placeholder="Title">
+                </div>
+        
+                <div class="inputSection">
+                    <label for="videoDescription"><strong>Description</strong></label>
+                    <textarea name="videoDescription" id="videoDescription" cols="30" rows="10" placeholder="Description Text"></textarea>
+                </div>
+        
+                <div class="inputSection">
+                    <label for="videoFile"><strong>Video</strong></label>
+                    <input type="file" name="videoFile" id="videoFile">
+                </div>
+    
+                <div class="inputSection">
+                    <label for="videoCollection"><strong>Choose Collection</strong></label>
+                    <select name="videoCollection" id="videoCollection">
+                        <option value="collectionUnity">Unity Tutorials</option>
+                        <option value="collectionWriting">Writing Tips</option>
+                        <option value="collectionParkour">Parkour</option>
+                    </select>
+                </div>
+    
+                <div class="inputSection">
+                    <label for="protectionPrivate"><strong>Private</strong></label>
+                    <input type="radio" name="protection" id="protectionPrivate" value="private">
+                    <label for="protectionPublic"><strong>Public</strong></label>
+                    <input type="radio" name="protection" id="protectionPublic" value="public">
+                </div>
+    
+                <div class="inputSection">
+                    <label for="submitButton"></label>
+                    <input type="submit" id="submitButton" value="Upload">
+                </div>
+            </form>
+            
+            <hr>
+            <footer>
+                &copy: Copyright
+            </footer>
+        </div>
+    </body>
+</html>

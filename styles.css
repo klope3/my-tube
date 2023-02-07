@@ -1,0 +1,178 @@
+/* All colors */
+:root {
+    --bg-blend-color: rgb(46, 45, 82);
+    --main-container-color: rgb(53, 45, 88);
+    --main-hover-color: rgb(95, 56, 139);
+    --main-font-color: rgb(225, 225, 225);
+    --main-button-color: var(--main-hover-color);
+    --main-button-hover-color: rgb(126, 66, 196);
+} 
+
+/* default styling */
+html {
+    background-color: var(--bg-blend-color);
+    color: var(--main-font-color);
+    font-family: 'Inter', sans-serif;
+    background-image: url("https://images.pexels.com/photos/2156881/pexels-photo-2156881.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+a {
+    color: var(--main-font-color);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--main-font-color);
+}
+
+a:hover {
+    background-color: var(--main-hover-color);
+}
+
+h1 {
+    margin: 0px;
+    font-size: 2.5em;
+}
+
+h2 {
+    padding: 5px;
+}
+
+li {
+    list-style-type: none;
+}
+
+ /* MyTube logo */
+h1 span img {
+    vertical-align: middle;
+    padding: 5px;
+}
+
+.navBar ul {
+    position: relative;
+    padding: 0px;
+    width: 100%;
+    margin: 0px;
+}
+
+.navBar li a {
+    padding: 20px 0px 20px 0px;
+    display: block;
+    width: 100%;
+    margin: 0px;
+}
+
+.navBarIcon {
+    padding: 15px;
+}
+
+.navBar, .baseVideoContainer {
+    background-color: var(--main-container-color);
+}
+
+.baseVideoContainer, .detailedVideoContainer, form {
+    border-radius: 15px;
+}
+
+.navBar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+}
+
+.contentBox {
+    position: absolute;
+    left: 250px;
+    width: 840px;
+}
+
+.videoContainer {
+    padding: 30px;
+    width: 356px;
+}
+
+.baseVideoContainer {
+    position: relative; /* positioned so that absolute positioning works on inner columns */
+}
+
+.detailedVideoContainer {
+    padding: 30px;
+}
+
+#rightColumn {
+    position: absolute;
+    left: 420px;
+    top: 0px;
+}
+
+/* Big upload button on home page */
+.uploadBox, .uploadBox a {
+    border-radius: 20px;
+}
+
+.uploadBox {
+    width: 356px;
+    height: 200px;
+    margin: 15px 0px 30px 30px;
+}
+
+.uploadBox a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-button-color);
+}
+
+.uploadBox a:hover {
+    background-color: var(--main-button-hover-color);
+}
+
+.uploadBox a p {
+    text-align: center;
+    position: relative;
+    top: 50px;
+}
+
+.uploadBoxIcon {
+    background-image: url("images/upload.png");
+    background-size: contain;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    top: 40px;
+    margin: auto;
+}
+
+/* Form styling */
+form {
+    background-color: var(--main-container-color);
+    width: 400px;
+    padding: 20px;
+}
+
+input[type="submit"] {
+    padding: 20px 100px;
+    border-radius: 10px;
+    color: var(--main-font-color);
+    background-color: var(--main-button-color);
+    font-size: 1.5em;
+    border-style: none;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--main-button-hover-color);
+}
+
+label {
+    display: block;
+}
+
+label[for="protectionPrivate"], label[for="protectionPublic"] {
+    display: inline;
+}
+
+.inputSection {
+    padding: 10px 5px;
+}
